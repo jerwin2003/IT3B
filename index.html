@@ -2,15 +2,280 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title><activity-1></title>
-</head>
-<body>
-    <p>IT-3B</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deresma Jerwin - Portfolio</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #00bcd4;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .hero {
+            min-height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: white;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #00bcd4;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #00bcd4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .about {
+            background: #f8f8f8;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            width: 180px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #00bcd4;
+        }
+
+        .contact {
+            text-align: center;
+            background: #222;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Portfolio</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
     <div>
-       <Name:DERESMA_JERWIN>
+        <h1>Hello, I'm <span>Deresma Jerwin</span></h1>
+
+        <p>BSIT 3B Student</p>
+
+        <p>
+            Welcome to my personal portfolio website.
+        </p>
+
+        <a href="#about" class="btn">About Me</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Me</h2>
+
+    <p>
+        My name is <strong>Deresma Jerwin</strong>.
+        I am a Bachelor of Science in Information Technology
+        student from <strong>BSIT 3B</strong>.
+        I am interested in web development, programming,
+        and learning new technologies.
+        My goal is to improve my skills and gain more
+        experience in the field of Information Technology.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Web Page Structure</p>
+        </div>
+
+        <div class="skill">
+            <h3>PHP</h3>
+            <p>Web Programming</p>
+        </div>
+
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Web Design</p>
+        </div>
+
+        <div class="skill">
+            <h3>MySQL</h3>
+            <p>Database Basics</p>
+        </div>
 
     </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>ShoeHub</h3>
+            <p>
+                An online shoes shopping web application
+                where users can browse shoes, view prices,
+                sizes, stocks, and place orders.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Inventory System</h3>
+            <p>
+                A store inventory management system
+                designed to manage products, stocks,
+                and inventory information.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Food Ordering System</h3>
+            <p>
+                A web-based system for browsing food,
+                adding items to a cart, and placing orders.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <p>Name: Deresma Jerwin</p>
+    <p>Course: BSIT 3B</p>
+    <p>Email: Your Email Here</p>
+
+    <a href="#home" class="btn">Back to Top</a>
+</section>
+
+<footer>
+    <p>
+        &copy; <?php echo date("Y"); ?> Deresma Jerwin.
+        All Rights Reserved.
+    </p>
+</footer>
+
 </body>
 </html>
